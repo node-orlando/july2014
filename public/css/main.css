@@ -1,0 +1,159 @@
+body, div, canvas, button, input, ul, li {
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    background:  #ffffff url(../img/space.png);
+    font-family: sans-serif;
+}
+
+canvas {
+    width:         960px;
+    height:        480px;
+    border-radius: 10px;
+}
+
+#mainMenu {
+    width:  250px;
+    height: 200px;
+}
+
+#mainMenu button {
+    width:     200px;
+    margin:    0 auto;
+    padding:   6px 0;
+    font-size: 16px;
+}
+
+#joinMenu {
+    width:  380px;
+    height: 470px;
+}
+
+#joinList {
+    height:          200px;
+    border:          2px solid #FFFFFF;
+    overflow:        hidden;
+    border-radius:   10px;
+    list-style-type: none;
+}
+
+#joinList li {
+    width:       340px;
+    color:       #FFFFFF;
+    height:      30px;
+    padding:     0 20px;
+    overflow:    auto;
+    line-height: 30px;
+}
+
+#joinList li:hover {
+    color:      #000000;
+    cursor:     pointer;
+    background: #FFFFFF;
+}
+
+#joinList li span {
+    display: block;
+}
+
+#joinList .selected {
+    color:      #000000;
+    background: #FFFFFF;
+}
+
+.host {
+    float: left;
+    width: 300px;
+}
+
+.count {
+    float:      right;
+    width:      40px;
+    text-align: right;
+}
+
+#createMenu {
+    width:  400px;
+    height: 200px;
+}
+
+.control {
+    overflow: auto;
+}
+
+.control input {
+    float:  left;
+    height: 27px;
+}
+
+.control button {
+    width:     100px;
+    float:     right;
+    padding:   4px 0;
+    font-size: 14px;
+}
+
+#mainMenu, #joinMenu, #createMenu, canvas {
+    top:      0;
+    left:     0;
+    right:    0;
+    bottom:   0;
+    margin:   auto;
+    position: absolute;
+}
+
+#createMenu, #joinMenu, #spectateMenu, #backButton {
+    display: none;
+}
+
+h1, input, button {
+    border:     none;
+    text-align: center;
+}
+
+input, button {
+    display:       block;
+    border-radius: 5px;
+}
+
+input {
+    width:       260px;
+    height:      25px;
+    font-size:   14px;
+    line-height: 25px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+h1 {
+    color:         #FFFFFF;
+    font-size:     28px;
+    margin-bottom: 30px;
+}
+
+button {
+    color:      #FFFFFF;
+    width:      75px;
+    margin:     0;
+    border:     2px solid #FFFFFF;
+    outline:    0;
+    padding:    2px;
+    font-size:  12px;
+    background: none;
+}
+
+button:hover {
+    color:       #000000;
+    cursor:      pointer;
+    transition:  background 0.3s, color 0.3s, font-weight 0.3s;
+    background:  #FFFFFF;
+    font-weight: bold;
+}
+
+.addBorder {
+    border: 2px solid #FFFFFF;
+}
