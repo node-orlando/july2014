@@ -43,6 +43,8 @@ function disconnect() {
     
     var player = room.players[this.playerID];
     
+    if (!player) { return false; }
+    
     // If player is host, disconnect all players in room.
     if (player.user === 'host') {
         io.sockets.in(this.roomID).emit('disconnected');
@@ -138,7 +140,7 @@ function newPlayer(data) {
     Give to all other players in the room the latest state of player.
 */
 function updatePlayer(data) {
-    if (!this.roomID) { return false; }
+    if (!rooms[this.roomID]) { return false; }
     
     rooms[this.roomID].players[this.playerID].state = data;
     
