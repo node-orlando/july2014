@@ -187,15 +187,17 @@ CLASS.Main = function () {
     // Socket.IO Callbacks
     SINGLE.Socket.on('connected',    this.onConnect.bind(this));
     SINGLE.Socket.on('disconnected', this.leaveGame.bind(this));
+    
+    SINGLE.Socket.on('joinGame',   this.joinGame.bind(this));
+    SINGLE.Socket.on('createGame', this.createGame.bind(this));
 };
 
 CLASS.Main.append = {
     /*
-        As soon as the client connects to a room, initialize game.
+        Run as soon as the client connects to server.
     */
     onConnect: function () {
-        SINGLE.Socket.on('joinGame',   this.joinGame.bind(this));
-        SINGLE.Socket.on('createGame', this.createGame.bind(this));
+        
     },
     
     /*
