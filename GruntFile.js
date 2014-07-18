@@ -8,7 +8,7 @@ module.exports = function (grunt) {
             
             hint: true,
             
-            watch: false
+            watch: true
         }
     });
 };
