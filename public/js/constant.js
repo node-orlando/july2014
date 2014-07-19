@@ -43,6 +43,6 @@ CONST.END_ANGLE = Math.PI * 2;   // ...                  determine a complete ci
 
 CONST.FPS = 60; // Game run-speed.
 
-CONST.TICK = CONST.FPS / 20; // Update player data @ server.
+CONST.TICK = FPS / 30; // Update player data @ server.
 
 CONST.MAX_PLAYER_SIZE = 2;   // Maximum capacity of users per room in-game.
